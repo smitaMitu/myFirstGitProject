@@ -1,0 +1,32 @@
+<!Doctype>
+<html>
+	<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			var person={
+				data:[{
+				firstName:"Smita", lastName:"More"},
+				{firstName:"K", lastName:"V"},
+				{firstName:"M", lastName:"S"}],
+				fullName: function(){
+					console.log(this.data[0].firstName+" "+this.data[0].lastName);
+				}
+			}
+			person.fullName();
+		//var secperson=new Object(person);
+		//secperson.firstName="gopi";
+		//secperson.lastName="pathak";
+		//secperson.fullName();
+
+		var myName="Kavita";
+		//myName.fullName();
+		$(document).ready(function(){
+			$(".button").click(person.fullName.bind(person));
+		});
+		
+		</script>
+	</head>
+	<body>
+		<input type="button" class="button">
+	</body>
+</html>
