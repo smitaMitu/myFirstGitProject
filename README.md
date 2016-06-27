@@ -1,2 +1,1 @@
-# myFirstGitProject
-First Repository
+Hi, I am a web designer 
